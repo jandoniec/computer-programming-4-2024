@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: "My first command"
         run: echo "Kuba"
-      - run: echo "The name of yout brnach is ${{ github.ref }}
-      - name: Check out repository CODE
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
         uses: actions/checkout@v4
       - name: "show structure"
         run: tree ./
