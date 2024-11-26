@@ -1,0 +1,14 @@
+name: Hello World
+on: [push]
+jobs:
+  Hello-World:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "My first command"
+        run: echo "Kuba"
+      - run: echo "The name of yout brnach is ${{ github.ref }}
+      - name: Check out repository CODE
+        uses: actions/checkout@v4
+      - name: "show structure"
+        run: tree ./
+      - run: echo "it works"
